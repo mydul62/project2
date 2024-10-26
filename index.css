@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
+
+body {
+  font-family: Averta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: transparent !important;
+}
 /********************* common css *******************
 *****************************************************/
 .container {
@@ -283,7 +287,7 @@ main {
   border: 2px solid #c29dd6;
   border-radius: 4px;
   padding: 20px;
-  background-color: rgb(246, 247, 249);
+  background-color: #875fbc25;
   color: #875fbc;
   font-family: Arial, sans-serif;
   font-size: 16px;
