@@ -133,7 +133,7 @@ header {
 
 .search-menu {
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 25px !important;
@@ -144,6 +144,7 @@ main {
   max-width: 1252px;
   margin: auto;
   padding-bottom: 100px;
+  padding: 15px;
 }
 .nav-link ul {
   display: flex;
@@ -176,6 +177,7 @@ main {
   padding: 24px 0;
 }
 .event-title h2 {
+  font-size: 23px;
   display: none;
 }
 .event-details {
@@ -230,9 +232,12 @@ main {
   font-size: 14px;
   color: #666;
 }
-
-.event-info svg {
-  margin-right: 8px;
+.event-info{
+display: flex;
+align-items: center;
+}
+.event-info img {
+  width: 18px;
 }
 .event-info a i {
   color: #555;
@@ -247,7 +252,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 .share-you-001 {
   display: none;
@@ -259,10 +264,11 @@ main {
 .share-buttons {
   display: flex;
   justify-content: flex-start;
-
   gap: 10px;
 }
-
+.share-buttons a img{
+width: 80px;
+}
 .share-buttons a {
   text-decoration: none;
   color: #555;
@@ -287,7 +293,7 @@ main {
   border: 2px solid #c29dd6;
   border-radius: 4px;
   padding: 20px;
-  background-color: #875fbc25;
+  background-color: #875fbc15;
   color: #875fbc;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -297,6 +303,10 @@ main {
   justify-content: start;
   gap: 20px;
   margin-bottom: 20px;
+}
+.title-stutus-bottom img {
+  margin-top: -5px;
+  margin-right: -15px;
 }
 
 .ticket-status i {
@@ -345,7 +355,34 @@ main {
   display: flex;
   width: 100%;
 }
+.ticket-action img{
+margin-bottom: 5px;
+width: 40px;
+}
+.map{
+display: flex;
+align-items: center;
+}
+.map p a{
+    font-size: 14px;
+    color: #026cdf;
+    font-weight: 600;
+    text-align: right;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 
+}
+.styles__item--17Ov3{
+  display: flex;
+  align-items: center;
+  gap: 10px;  
+}
 .ticket-details {
   display: flex;
   justify-content: space-between;
@@ -653,6 +690,57 @@ button:hover {
   font-size: 16px;
   margin-left: 8px;
 }
+.mobile-view{
+display: none;
+}
+
+ /* Container styling */
+ .dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+.dropdown a{
+padding: 15px 0;
+}
+/********************* Button styling ****************/
+
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 43px;
+  right: 50px;
+  background-color: white;
+  min-width: 240px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Individual item styling */
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect for items */
+.dropdown-content li a:hover {
+  background-color: #026cdf;
+  color: white;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 /* Mobile Styles (up to 767px) */
 @media (max-width: 991px) {
   /* General adjustments */
@@ -749,6 +837,14 @@ button:hover {
     padding: 15px;
     font-size: 14px;
   }
+.event-info img {
+  width: 18px;
+  height: 18px;
+} 
+/* help-container */
+.help-container{
+display: none;
+}
 
   /* Ticket Actions */
   .ticket-actions {
@@ -826,4 +922,47 @@ button:hover {
     font-size: 10px;
     padding: 8px;
   }
+}
+
+.mobile-view{
+display: none;
+}
+@media (max-width: 771px) {
+/* Header */
+/* 
+.search-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+.user-menu{
+display: none;
+}
+.logo{
+display: none;
+} */
+.user-menu{
+display: none;
+}
+.nav_menu{
+display: none;
+}
+
+.mobile-view{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+}
+.mobile-view h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.58;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
 }

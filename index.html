@@ -21,21 +21,51 @@
           <input type="text" class="search-input" placeholder="Search for artist, event or venue">
       </div>
       <ul class="menu">
-          <li><a href="#">Concerts</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Arts & Theater</a></li>
-          <li><a href="#">Family</a></li>
-          <li><a href="#">VIP</a></li>
-          <li><a href="#">Deals</a></li>
+        <li role="none">
+          <a href="https://www.ticketmaster.com/new/discover/concerts?_gl=1*1uif2ct*_gcl_au*ODU0MTUxNTYzLjE3Mjk4Nzg2NDc.*_ga*MTU1MTY3ODYxMC4xNzI5ODc4NjQ4*_ga_C1T806G4DF*MTcyOTk2NjIyNC44LjEuMTcyOTk3MTQxNS4zNS4wLjA.*_ga_H1KKSGW33X*MTcyOTk2OTQ3Ny45LjEuMTcyOTk3MTQxNC4zNi4wLjA."
+              title="Concerts" target="_self" role="link">Concerts</a>
+      </li>
+      <li role="none">
+          <a href="https://www.ticketmaster.com/new/discover/sports" title="Sports" target="_self" role="link">Sports</a>
+      </li>
+      <li role="none">
+          <a href="https://www.ticketmaster.com/new/discover/arts-theater" title="Arts &amp; Theater" target="_self" role="link">Arts &amp; Theater</a>
+      </li>
+      <li role="none">
+          <a href="https://www.ticketmaster.com/new/discover/family" title="Family" target="_self" role="link">Family</a>
+      </li>
+      <li role="none">
+          <a href="https://www.ticketmaster.com/microsite/premium" title="VIP" target="_self" role="link">VIP</a>
+      </li>
+      <li role="none">
+          <a href="https://www.ticketmaster.com/ticketdeals" title="Deals" target="_self" role="link">Deals</a>
+      </li>
       </ul>
       </div>
-      <div class="user-menu">
-          <a href="#"><i class="fas fa-user-circle"></i> <span class="user-name">William</span></a>
+      <div class="user-menu dropdown">
+          <a  class="dropdown-button dropdown" href="#"><i class="fas fa-user-circle"></i> <span class="user-name">William</span>
+              <ul class="dropdown-content">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">My Tickets</a></li>
+                <li><a href="#">My Listings</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Learn About Verified Tickets</a></li>
+                <li><a href="#">Sign Out</a></li>
+          </ul>
+          </a>
           <a class="help" href="#">Help</a>
           <div class="search-menu">
           <span><i class="fa-solid fa-magnifying-glass"></i></span>
           <span onclick="toggleMenu()" ><i class="fa-solid fa-bars"></i></span>
           </div>
+      </div>
+      <div class="mobile-view">
+      <a href="https://www.ticketmaster.com/user/orders">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0H0v24h24z"></path><path fill="#fff" fill-opacity=".65" fill-rule="nonzero" d="M10.773 20.738a.75.75 0 0 1-1.106 1.013L1.197 12.5a.75.75 0 0 1 0-1.013l8.47-9.243a.75.75 0 1 1 1.106 1.014l-8.006 8.736 8.006 8.745z"></path></g></svg>
+      </a>
+      <h3>Event Details</h3>
+      <div></div>
       </div>
   </nav>
   <div class="">
@@ -113,24 +143,34 @@
         <div class="event-details-title">
             <h2>Oregon Ducks Volleyball vs. UCLA Bruins Women's Volleyball</h2>
             <div class="event-info">
-              <svg  width="10" height="10"  class="sc-bdVaJa sc-hzDkRC bkbVPq" role="presentation" focusable="false" alt=""><use xlink:href="#calendar"></use></svg><span>Nov 2 • 8:00 PM</span>
+              <img src="./images/date.png" alt="">
+              <span>Nov 2 • 8:00 PM</span>
             </div>
             <div class="event-info share-you-001">
-                📅 <span>Share You're Going</span>
+                <span>Share You're Going</span>
             </div>
             <div class="event-info">
-             <a href="#"> <i color="" class="fa-solid fa-location-dot"></i> Matthew Knight Arena</a>
+              <img src="./images//adress.png" alt="">
+             <a href="https://www.ticketmaster.com/matthew-knight-arena-tickets-eugene/venue/123791?_gl=1*16vxos3*_gcl_au*ODU0MTUxNTYzLjE3Mjk4Nzg2NDc.*_ga*MTU1MTY3ODYxMC4xNzI5ODc4NjQ4*_ga_C1T806G4DF*MTcyOTk2NjIyNC44LjEuMTcyOTk2OTQ3OC42MC4wLjA.*_ga_H1KKSGW33X*MTcyOTk2OTQ3Ny45LjAuMTcyOTk2OTQ3Ny42MC4wLjA."> 
+             Matthew Knight Arena</a>
             </div>
             <div class="event-info">
-               <a href="#"><i class="fa-solid fa-book-atlas"></i>1776 E. 13th Ave, Eugene, OR, 97403</a>
+            <img src="./images/date.png" alt="">
+               <a href="https://www.google.com/maps/place/Matthew+Knight+Arena/@44.0449193,-123.0688858,737m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54c11e256f24c207:0xbeff546639a20e7!8m2!3d44.0449193!4d-123.0663109!16s%2Fm%2F03m428l?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">1776 E. 13th Ave, Eugene, OR, 97403</a>
             </div>
             <hr class="cart-line">
             <div class="social-share">
             <h3>Share You're Going</h3>
               <div class="share-buttons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-solid fa-message"></i></a>
+                <a href="https://www.facebook.com/dialog/feed?app_id=140669015975185&link=https%3A%2F%2Fwww.ticketmaster.com%2Foregon-ducks-volleyball-vs-ucla-bruins-eugene-oregon-11-02-2024%2Fevent%2F0F0060F6DE6945F5%3Futm_source%3Dfb%26utm_medium%3Dsocial%26utm_campaign%3Dshare_order">
+                <img src="./images/facebook.png" alt="">
+                </a>
+                <a href="https://x.com/intent/post?url=https%3A%2F%2Fwww.ticketmaster.com%2Foregon-ducks-volleyball-vs-ucla-bruins-eugene-oregon-11-02-2024%2Fevent%2F0F0060F6DE6945F5%3Futm_source%3Dtw%26utm_medium%3Dsocial%26utm_campaign%3Dshare_order&text=I%27m+excited+about+the+Oregon+Ducks+Volleyball+vs.+UCLA+Bruins+Women%27s+Volleyball+-+Matthew+Knight+Arena%2C+Eugene%2C+OR+-+Sat%2C+Nov+2.+Who%27s+in%3F">
+                <img src="./images/tweter.png" alt="">
+                </a>
+                <a href="#">
+                <img src="./images/smss1.png" alt="">
+                </a>
             </div>
             </div>
         </div>
@@ -143,7 +183,7 @@
       <p>Use Chat to quickly find the answers you need.</p>
       <a href="#" class="chat-button">
         Chat
-        <span class="icon">💬</span>
+        <img src="./images/sms.png" alt="">
       </a>
     </div>
     </div>
@@ -152,35 +192,42 @@
       <div class="ticket-status">
         <h4>Your Phone Is Your Ticket</h4>
         <div class="title-stutus-bottom">
-          <i  class="fa-solid fa-mobile-retro"></i>
+          <img src="./images/mob.png" alt="">
             <p>Sign in to Ticketmaster on your phone and go to My Tickets. Your tickets will be there for you!</p>
         </div>
     </div>
     <div>
     
-    
-    
+   
       <div class="ticket-container">
         <div class="ticket-actions">
           <div class="ticket-action" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" fill="#026cdf" viewBox="0 0 500 500" ><title>Messages (0)</title><path d="M483.3,24.5c-5.5-5.6-13.8-7.5-21.1-4.8L16.8,181.9c-7.5,2.7-12.7,9.7-13.1,17.6c-0.5,8,3.9,15.5,11,19 l177.3,88.6l88.8,177.3c3.4,6.8,10.3,11,17.9,11c0.3,0,0.6,0,0.9,0c7.9-0.4,14.8-5.4,17.7-12.7L487.6,45.8 C490.5,38.5,488.8,30.1,483.3,24.5z M388.3,89.2L203,268.1L74.1,203.6L388.3,89.2z M231.3,296.4l185.6-179.2L296.3,426.4 L231.3,296.4z"></path></svg>
+           <img src="./images/transfer.png" alt="">
            <span> <a style="color: #026cdf;" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">Transfer Tickets</a></span>
           </div>
           <div class="ticket-action" href="#">
-            <svg style="fill:#026cdf" width="30" height="30" fill="#026cdf" class="" role="presentation" focusable="false"><use xlink:href="#resale"></use></svg>
+           <img src="./images/rotet.png" alt="">
            <span><a style="color: #026cdf;" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/sell"> Sell Tickets</a></span>
           </div>
         </div>
-        <div class="ticket-details">
-          <h3>My SafeTix™ (1)</h3>
-          <div >
-            <span><i color="" class="fa-solid fa-location-dot"></i></span>
-            <span>View map</span>
-          </div>
+        <div>
         </div>
-        <div class="styles__item--17Ov3">
-        <h4>Sec GA2, (General Admission)</h4>
-        </div>
+       <div>
+       <ul>
+        <li class="styles__item--17Ov3">
+          <img src="./images//card.png" alt="">
+          <h4>Sec GA2, (General Admission)</h4>
+          </li>
+        <li class="styles__item--17Ov3">
+          <img src="./images//card.png" alt="">
+          <h4>Sec GA3, (General Admission)</h4>
+          </li>
+        <li class="styles__item--17Ov3">
+          <img src="./images//card.png" alt="">
+          <h4>Sec GA4, (General Admission)</h4>
+          </li>
+       </ul>
+       </div>
         <p class="footer-text">
           Can't find something you've purchased? Check your order confirmation email or 
           <a href="https://www.ticketmaster.com/user/orders">View Your Orders</a>.
