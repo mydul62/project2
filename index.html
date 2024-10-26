@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>tickit</title>
@@ -29,13 +30,67 @@
       </ul>
       </div>
       <div class="user-menu">
-          <a href="#"><i class="fas fa-user-circle"></i> William</a>
-          <a href="#">Help</a>
+          <a href="#"><i class="fas fa-user-circle"></i> <span class="user-name">William</span></a>
+          <a class="help" href="#">Help</a>
+          <div class="search-menu">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <span onclick="toggleMenu()" ><i class="fa-solid fa-bars"></i></span>
+          </div>
       </div>
   </nav>
+  <div class="">
+    <div class="mobile-menu mobile-sidebar">
+      <div class="sidebar-header">
+        <div class="header">
+          <div class="user-icon">👤</div>
+          <span>William</span>
+      </div>
+        <span style="font-size: 50px;" class="close-btn" onclick="toggleMenu()">×</span>
+      </div>
+      <div class="sidebar">
+        
+        <div class="section">
+            <h3>Discover</h3>
+            <ul>
+                <li>Concerts</li>
+                <li>Sports</li>
+                <li>Arts & Theater</li>
+                <li>Family</li>
+                <li>VIP</li>
+                <li>Deals</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>For You</h3>
+        </div>
+        <div class="section">
+            <h3>My Account</h3>
+            <ul>
+                <li>My Tickets</li>
+                <li>My Listings</li>
+                <li>Settings</li>
+                <li>Credits & Codes</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>Sell</h3>
+            <p>Learn About Verified Tickets</p>
+            <div class="app-links">
+                <img src="appstore.png" alt="App Store">
+                <svg class="sc-bdVaJa sc-dAOnuy jMWAyN" role="presentation" focusable="false" alt=""><use xlink:href="#play-store-badge"></use></svg>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Not William? <a href="#">Sign Out</a></p>
+        </div>
+    </div>
+
+    </div>
+    
+  </div>
   </header>
   <main>
-  <div class="nav-link">
+  <div class="nav-link container">
    <ul>
    <li><a href=""><span>My Accoun</span> <span  class="arrow"><i width="" class="fa-solid fa-chevron-right"></i></span></a></li>
    <li><a href=""><span>My Events</span> <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span></a></li>
@@ -58,7 +113,7 @@
         <div class="event-details-title">
             <h2>Oregon Ducks Volleyball vs. UCLA Bruins Women's Volleyball</h2>
             <div class="event-info">
-                📅 <span>Nov 2 • 8:00 PM</span>
+              <svg  width="10" height="10"  class="sc-bdVaJa sc-hzDkRC bkbVPq" role="presentation" focusable="false" alt=""><use xlink:href="#calendar"></use></svg><span>Nov 2 • 8:00 PM</span>
             </div>
             <div class="event-info share-you-001">
                 📅 <span>Share You're Going</span>
@@ -83,6 +138,14 @@
     <div>
     
     </div>
+    <div class="help-container">
+      <h2>Need Help With Your Order?</h2>
+      <p>Use Chat to quickly find the answers you need.</p>
+      <a href="#" class="chat-button">
+        Chat
+        <span class="icon">💬</span>
+      </a>
+    </div>
     </div>
     <div class="right-site">
      
@@ -100,12 +163,12 @@
       <div class="ticket-container">
         <div class="ticket-actions">
           <div class="ticket-action" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">
-            <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.58L9 16.17Z"></path></svg>
-           <span> <a href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">Transfer Tickets</a></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" fill="#026cdf" viewBox="0 0 500 500" ><title>Messages (0)</title><path d="M483.3,24.5c-5.5-5.6-13.8-7.5-21.1-4.8L16.8,181.9c-7.5,2.7-12.7,9.7-13.1,17.6c-0.5,8,3.9,15.5,11,19 l177.3,88.6l88.8,177.3c3.4,6.8,10.3,11,17.9,11c0.3,0,0.6,0,0.9,0c7.9-0.4,14.8-5.4,17.7-12.7L487.6,45.8 C490.5,38.5,488.8,30.1,483.3,24.5z M388.3,89.2L203,268.1L74.1,203.6L388.3,89.2z M231.3,296.4l185.6-179.2L296.3,426.4 L231.3,296.4z"></path></svg>
+           <span> <a style="color: #026cdf;" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">Transfer Tickets</a></span>
           </div>
           <div class="ticket-action" href="#">
-            <i class="fa-solid fa-arrows-rotate"></i>
-           <span><a href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/sell"> Sell Tickets</a></span>
+            <svg style="fill:#026cdf" width="30" height="30" fill="#026cdf" class="" role="presentation" focusable="false"><use xlink:href="#resale"></use></svg>
+           <span><a style="color: #026cdf;" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/sell"> Sell Tickets</a></span>
           </div>
         </div>
         <div class="ticket-details">
@@ -164,5 +227,6 @@
   
   </main>
   <footer></footer>
+  <script src="./index.js"></script>
 </body>
 </html>
