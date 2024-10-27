@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: averta;
+  src: url(./font/AvertaDemo-Regular.otf);
+}
 
 body {
-  font-family: Averta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: averta;
   background-color: transparent !important;
 }
 /********************* common css *******************
@@ -20,8 +24,7 @@ body {
 li {
   list-style: none;
 }
-a{
-  
+a {
   text-decoration: none;
 }
 img {
@@ -31,12 +34,32 @@ img {
 .sc-bdVaJa {
   fill: black !important;
 }
+.footer-container {
+  margin: 0px auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  border: none !important;
+}
+.footer-hr-content{
+  margin: 0px auto;
+  max-width: 1440px;
+}
+.footer-hr-content hr{
+    border: 0px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+}
+
 /********************* header *******************
 *****************************************************/
 header {
   background-image: linear-gradient(
     262deg,
-    rgb(0, 45, 161),
+    rgb(0, 29, 161),
     rgb(2, 108, 223) 55%,
     rgb(0, 45, 161)
   );
@@ -143,7 +166,7 @@ header {
 main {
   max-width: 1252px;
   margin: auto;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   padding: 15px;
 }
 .nav-link ul {
@@ -232,9 +255,9 @@ main {
   font-size: 14px;
   color: #666;
 }
-.event-info{
-display: flex;
-align-items: center;
+.event-info {
+  display: flex;
+  align-items: center;
 }
 .event-info img {
   width: 18px;
@@ -266,8 +289,8 @@ align-items: center;
   justify-content: flex-start;
   gap: 10px;
 }
-.share-buttons a img{
-width: 80px;
+.share-buttons a img {
+  width: 80px;
 }
 .share-buttons a {
   text-decoration: none;
@@ -355,33 +378,32 @@ width: 80px;
   display: flex;
   width: 100%;
 }
-.ticket-action img{
-margin-bottom: 5px;
-width: 40px;
+.ticket-action img {
+  margin-bottom: 5px;
+  width: 40px;
 }
-.map{
-display: flex;
-align-items: center;
-}
-.map p a{
-    font-size: 14px;
-    color: #026cdf;
-    font-weight: 600;
-    text-align: right;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-
-}
-.styles__item--17Ov3{
+.map {
   display: flex;
   align-items: center;
-  gap: 10px;  
+}
+.map p a {
+  font-size: 14px;
+  color: #026cdf;
+  font-weight: 600;
+  text-align: right;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.styles__item--17Ov3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .ticket-details {
   display: flex;
@@ -531,8 +553,13 @@ align-items: center;
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(260deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161));
-  padding: 0;
+  background-image: linear-gradient(
+    260deg,
+    rgb(0, 45, 161),
+    rgb(2, 108, 223) 55%,
+    rgb(0, 45, 161)
+  );
+  padding: 0 10px;
 }
 
 .close-btn {
@@ -573,7 +600,7 @@ align-items: center;
   margin-bottom: 20px;
 }
 
-.section h3 {
+.section h3 a {
   font-size: 16px;
   color: #bbb;
   margin-bottom: 10px;
@@ -588,21 +615,48 @@ align-items: center;
   padding: 8px 0;
   cursor: pointer;
 }
+.section ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  line-height: 1.39;
+  letter-spacing: 0px;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 0px;
+}
 
 .section ul li:hover {
   color: #1e90ff;
 }
-
+.my-account {
+  margin-top: 10px;
+}
 .app-links {
   display: flex;
+  align-items: center;
   gap: 10px;
   margin-top: 10px;
+}
+.get-app{
+
 }
 
 .app-links img {
   width: 120px;
 }
-
+.iuNLJx {
+  background: rgba(255, 255, 255, 0.4);
+  border: 0px;
+  height: 1px;
+  margin: 16px 0px 0px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
 .footer {
   margin-top: 20px;
   font-size: 14px;
@@ -690,28 +744,27 @@ button:hover {
   font-size: 16px;
   margin-left: 8px;
 }
-.mobile-view{
-display: none;
+.mobile-view {
+  display: none;
 }
 
- /* Container styling */
- .dropdown {
+/* Container styling */
+.dropdown {
   position: relative;
   display: flex;
   justify-content: center;
   font-family: Arial, sans-serif;
 }
-.dropdown a{
-padding: 15px 0;
+.dropdown a {
+  padding: 15px 0;
 }
 /********************* Button styling ****************/
-
 
 /* Dropdown content styling */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 43px;
+  top: 53px;
   right: 50px;
   background-color: white;
   min-width: 240px;
@@ -740,7 +793,116 @@ padding: 15px 0;
   display: block;
 }
 
+/* ********************************************
+***************footer**************************** */
+.footer-lg-content{
+display: block;
+}
+footer {
+  background-color: rgb(31, 38, 45);
+  padding: 88px 0px 68px 0;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.footer-section {
+  width: 20%;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #0af;
+}
+
+.app-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.app-links a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+.footer-bottom {
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.social-icons a img{
+width: 24px;
+}
+.social-icons a:hover {
+  color: #0af;
+}
+.term-and-cond{
+color: white ;
+}
+.term-and-cond:hover{
+  color: rgb(2, 108, 223);
+}
+.manage-cookie{
+margin-left: 10px;
+}
+.manage-cookie{
+ color: #0af;
+}
+.manage-cookie:hover{
+background: #0af;
+color: white;
+}
+.sm-footer{
+ display: none;
+ text-align: center;
+}
 /* Mobile Styles (up to 767px) */
 @media (max-width: 991px) {
   /* General adjustments */
@@ -779,6 +941,9 @@ padding: 15px 0;
     display: block;
   }
   /* Main Section */
+  main{
+    
+  }
   .event-details {
     flex-direction: column;
     gap: 20px;
@@ -802,7 +967,7 @@ padding: 15px 0;
   }
 
   .event-card img {
-    width: 220px;
+    max-width: 320px;
     height: 108px;
   }
 
@@ -837,14 +1002,14 @@ padding: 15px 0;
     padding: 15px;
     font-size: 14px;
   }
-.event-info img {
-  width: 18px;
-  height: 18px;
-} 
-/* help-container */
-.help-container{
-display: none;
-}
+  .event-info img {
+    width: 18px;
+    height: 18px;
+  }
+  /* help-container */
+  .help-container {
+    display: none;
+  }
 
   /* Ticket Actions */
   .ticket-actions {
@@ -922,14 +1087,31 @@ display: none;
     font-size: 10px;
     padding: 8px;
   }
+  .mobile-view {
+    display: none;
+  }
+  .footer-lg-content{
+    display: none;
+    }
+    .sm-footer {
+      display: block;
+      text-align: center;
+      color: white;
+      margin: 0 24px;
+      line-height: 30px;
+      text-align: white !important;
+  }
+   footer {
+    background-color: rgb(31, 38, 45);
+    padding: 20px 0px 20px 0;
+  } 
+   
 }
 
-.mobile-view{
-display: none;
-}
+
 @media (max-width: 771px) {
-/* Header */
-/* 
+  /* Header */
+  /* 
 .search-menu {
   display: none;
 }
@@ -943,26 +1125,30 @@ display: none;
 .logo{
 display: none;
 } */
-.user-menu{
-display: none;
-}
-.nav_menu{
-display: none;
-}
 
-.mobile-view{
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-color: white;
-}
-.mobile-view h3{
+  .user-menu {
+    display: none;
+  }
+  .nav_menu {
+    display: none;
+  }
+
+  .mobile-view {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .mobile-view h3 {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.58;
     text-align: center;
     color: rgb(255, 255, 255);
-
-}
+  }
+  .title-stutus-bottom img{
+  width: 70px;
+  height: 70px;
+  }
 }
